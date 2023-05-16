@@ -1,0 +1,27 @@
+@import "../../index.scss";
+.ChartHours{
+    .rechartHeight{
+        height: 500px;
+        @include mobile{
+                margin-right: 5%!important;
+                height: 300px;
+        }
+        .mainChartLegend{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: whitesmoke;
+            margin-bottom: 20px;
+            .title{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+            }
+            .note{
+                font-size: .7rem;
+            }
+        }
+    }
+}

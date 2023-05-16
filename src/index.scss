@@ -11,3 +11,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+@mixin tablet{
+  @media only screen and (max-width:950px) {
+      @content
+  }
+};
+
+@mixin mobile(){
+  @media only screen and (max-width:500px){
+      @content
+  }
+}

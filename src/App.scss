@@ -1,0 +1,28 @@
+@import "./index.scss";
+.App {
+  background-image: linear-gradient(to bottom , #283048 , #859398);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loadingScreen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: white;
+}
+.loadingScreen div{
+  width: 50%;
+}
+
+.mainContainer{
+  width: 70%;
+  @include tablet{
+    width: 90%;
+  }
+  @include mobile{
+    width: 100%;
+  }
+}
